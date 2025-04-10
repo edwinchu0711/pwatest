@@ -1,28 +1,11 @@
 var currentHeight = 0 ;
 var In_menulist = false ;
 var list_opening = false ;
-window.addEventListener('load', pageload);
 
 function pageload() {
     menuList();
     
     menu_detect();
-    
-    
-    
-     if ('serviceWorker' in navigator) {
-        window.addEventListener('load', () => {
-          navigator.serviceWorker.register('./service-worker.js')
-            .then(registration => {
-              console.log('ServiceWorker 註冊成功:', registration.scope);
-            })
-            .catch(error => {
-              console.log('ServiceWorker 註冊失敗:', error);
-            });
-        });
-      }
-
-    
 }
 
 function menuList(){ // 此function可以使滑鼠滑到menu按鈕時會延伸出更多list
