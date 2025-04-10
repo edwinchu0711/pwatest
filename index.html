@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css"> <!-- 原本網頁用的CSS -->
+<link rel="stylesheet" type="text/css" href="style.css" /> <!-- 我們用的CSS -->
+<script src="script.js" type="text/javascript"></script> <!-- 我們用的javascript -->
+<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=dF93y39m6rZCnljPf6s7_rpLSyt_vMioZQGuWDKBDBtt3DmZH7XfdjvH8WtJsEiAIru4TlETH5Gzy6_Uvz-uFR3UCexEmTKe6BYOGvItWxmtN1YvuE78o608PqWzmkSG" charset="UTF-8"></script><style>
+body {font-family: "Times New Roman", Georgia, Serif;}
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Playfair Display";
+  letter-spacing: 5px;
+}
+</style>
+</head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
+    <a href="#home" class="w3-bar-item w3-button">Gourmet au Catering</a>
+    <!-- Right-sided navbar links. Hide them on small screens -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">About</a>
+      <div id="menu-button-area" class="w3-bar-item w3-button">
+        <a href="#menu" class="w3-bar-item w3-button" id="menu-button">Menu</a>
+        <div class = "menu-list" id="menu-list"><!-- w3-card可以使元素增加陰影 -->
+          <a href="#first-post" class="w3-bar-item w3-button w3-card w3-padding-large">Creamy Risotto</a> 
+          <a href="#second-post" class="w3-bar-item w3-button w3-card w3-padding-large" >American Cheeseburger <br>with Fries</a>
+          <a href="#third-post" class="w3-bar-item w3-button w3-card w3-padding-large" >王振道</a>
+          <a href="#forth-post" class="w3-bar-item w3-button w3-card w3-padding-large" >剩你了</a>
+          <a href="#fifth-post" class="w3-bar-item w3-button w3-card w3-padding-large" >Braised Pork Rice</a>
+          <a href="#sixth-post" class="w3-bar-item w3-button w3-card w3-padding-large" >Noodle</a>
+          <a href="#seventh-post" class="w3-bar-item w3-button w3-card w3-padding-large" >Searing Steak</a>
+          <a href="#eighth-post" class="w3-bar-item w3-button w3-card w3-padding-large" >Energy Boost Latte</a>
+        </div>
+      </div>
+      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
+  <img class="w3-image" src="img/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
+  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
+    <h1 class="w3-xxlarge">Le Catering</h1>
+  </div>
+</header>
+
+<!-- Page content -->
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col m6 w3-padding-large w3-hide-small">
+     <img src="img/tablesetting2.jpg" class="w3-round w3-image w3-opacity-min" alt="Table Setting" width="600" height="750">
+    </div>
+
+    <div class="w3-col m6 w3-padding-large">
+      <h1 class="w3-center">About Catering</h1><br>
+      <h5 class="w3-center">Tradition since 1889</h5>
+      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+  </div>
+  
+  <hr>
+  
+  <!-- Menu Section -->
+  <div class="w3-row w3-padding-64" id="menu">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Our Menu</h1><br>
+      <h4>Bread Basket</h4>
+      <p class="w3-text-grey">Assortment of fresh baked fruit breads and muffins 5.50</p><br>
+    
+      <h4>Honey Almond Granola with Fruits</h4>
+      <p class="w3-text-grey">Natural cereal of honey toasted oats, raisins, almonds and dates 7.00</p><br>
+    
+      <h4>Belgian Waffle</h4>
+      <p class="w3-text-grey">Vanilla flavored batter with malted flour 7.50</p><br>
+    
+      <h4>Scrambled eggs</h4>
+      <p class="w3-text-grey">Scrambled eggs, roasted red pepper and garlic, with green onions 7.50</p><br>
+    
+      <h4>Blueberry Pancakes</h4>
+      <p class="w3-text-grey">With syrup, butter and lots of berries 8.50</p>    
+    </div>
+    
+    <div class="w3-col l6 w3-padding-large">
+      <img src="img/tablesetting.jpg" class="w3-round w3-image w3-opacity-min" alt="Menu" style="width:100%">
+    </div>
+  </div>
+
+  <hr>
+  <!-- 第一篇貼文 -->
+   <div class="w3-container w3-padding-64" id="first-post">
+    <div class="w3-col l6 w3-padding-large">
+      <img src="img/Creamy Risotto small.jpg" id="first-post-img" class="w3-round w3-image" alt="Menu" style="width:100%">
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Creamy Risotto</h1><br>
+      <p class="w3-large" >The part I love most about this dish is its rich and creamy flavor. 
+        The aroma is so enticing that it's hard to resist. When I taste this dish, 
+        the creamy flavor gently unfolds in my mouth, bringing a sense of warmth and satisfaction. 
+        The texture of the rice is also cooked to perfection, each grain distinct yet tender, 
+        perfectly complementing the other flavors of the dish. The plating is exquisite, 
+        with vibrantly colored ingredients artfully arranged on the plate, 
+        offering not only a treat for the taste buds but also a visual delight. 
+        This is not only a memorable delicacy but also a dish that I would love to enjoy again. 
+        Each tasting feels like indulging in a feast for both the eyes and the palate.</p>
+        <h4 class="w3-padding-16">Eating Tips</h4>
+        <ol class="w3-text-grey w3-large" id="first-post-list">
+          <li class="first-post-list-content">Before eating, take a moment to smell the aroma—it's incredibly fragrant.</li>
+          <li class="first-post-list-content">You can pair it with other foods of different flavors, 
+          such as fries or a drink, as the taste might become overwhelming after a while.</li>
+          <li class="first-post-list-content">Since the dish contains milk, it is not recommended for those who are lactose intolerant.</li>
+        </ol>
+    </div>  
+   </div>
+  <hr>
+
+  <!-- 第二篇貼文 -->
+  <div class="w3-container w3-padding-64" id="second-post">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">American Cheeseburger with Fries</h1><br>
+      <p class="w3-large" >This classic fast-food combination is a favorite for many, 
+        as it perfectly blends multiple layers of flavor with a satisfying texture. 
+        First, the burger features two juicy beef patties as the main attraction, 
+        complemented by melted American cheese, which adds a rich, creamy taste. 
+        Fresh lettuce and sliced pickles provide a crisp texture, 
+        while finely chopped onions add a hint of sharpness to the overall flavor. 
+        The special sauce is the highlight, 
+        with its sweet and tangy notes offering a delightful surprise for your taste buds.
+        Paired with the burger are the famous golden fries. 
+        These fries are crispy on the outside and soft on the inside, 
+        with just the right amount of saltiness, 
+        showcasing perfect frying craftsmanship. T
+        hey are the ideal sidekick, 
+        whether enjoyed on their own or alongside the burger, 
+        delivering immense satisfaction.</p>
+        <h4 class="w3-padding-16">Eating Tips</h4>
+        <ol class="w3-text-grey w3-large" id="first-post-list">
+          <li class="first-post-list-content">Take your time to chew each bite thoroughly. This not only aids digestion but also allows you to savor the flavors more fully.</li>
+          <li class="first-post-list-content">Drink water before and during your meal to help regulate your appetite and enhance the overall dining experience.</li>
+        </ol>
+    </div> 
+    <div class="w3-col l6 w3-padding-large">
+      <img src="img/bigbugger.jpg" id="first-post-img" class="w3-round w3-image" alt="Menu" style="width:100%">
+    </div> 
+   </div>
+  <hr>
+
+
+  <!-- 第五篇貼文 -->
+    <div class="w3-container w3-padding-64" id="fifth-post">
+      <div class="w3-col l6 w3-padding-large">
+        <img src="img/Braised pork rice.jpg" id="fifth-post-img" class="w3-round w3-image" alt="Menu" style="width:100%">
+      </div>
+      <div class="w3-col l6 w3-padding-large">
+        <h1 class="w3-center">Braised Pork Rice</h1><br>
+        <p class="w3-large" >This is braised pork rice, and in the photo, you can see the beautiful color of the braised pork.
+            It has been simmered for a long time, making it very tender, and each bite is infused with a sweet and savory sauce,
+            making it perfect to eat with rice. The balance of fat and lean meat ensures it is not too dry or hard to swallow. 
+            The pickled mustard on the side helps to cleanse the palate when eating the meat,
+            making this a braised pork rice dish well worth trying.</p>
+          <h4 class="w3-padding-16">Eating Tips</h4>
+          <ol class="w3-text-grey w3-large" id="first-post-list">
+            <li class="fifth-post-list-content">It is recommended to cut the braised pork into pieces to avoid eating only lean or fatty parts.</li>
+            <li class="fifth-post-list-content">You can take a bite of the meat and chew it a bit to let the sauce seep out before eating it with rice.</li>
+          </ol>
+      </div>  
+     </div>
+    <hr>
+    
+    <!-- 第六篇貼文 -->
+    <div class="w3-container w3-padding-64" id="sixth-post">
+      
+      <div class="w3-col l6 w3-padding-large">
+        <h1 class="w3-center">Noodles</h1><br>
+        <p class="w3-large" >This exotic dish allows us to experience a tropical vibe. Due to the hot weather,
+          tropical foods often add spiciness to stimulate the appetite.This Thai instant noodle is primarily spicy,
+          with the noodles emitting a unique aroma of spices even before cooking. The sauce packet contains a red powder that smells spicy.
+          After cooking, the noodles are slightly firm and have the same spice aroma as initially smelled. 
+          The overall taste is quite pungent and spicy, embodying a strong Thai flavor.</p>
+          <h4 class="w3-padding-16">Eating Tips</h4>
+          <ol class="w3-text-grey w3-large" id="sixth-post-list">
+            <li class="sixth-post-list-content">It is recommended to let the noodles soak for five minutes before eating.</li>
+            <li class="sixth-post-list-content">The powder might be spicy, so it's advised to avoid inhaling while eating to prevent coughing.</li>
+          </ol>
+      </div>
+       <div class="w3-col l6 w3-padding-large">
+        <img src="img/Noodle.jpg" id="sixth-post-img" class="w3-round w3-image" alt="Menu" style="width:100%">
+      </div> 
+     </div>
+    <hr>
+
+     <!-- 第七篇貼文 -->
+   <div class="w3-container w3-padding-64" id="seventh-post">
+    <div class="w3-col l6 w3-padding-large">
+      <img src="img/steak.jpg" id="seventh-post-img" class="w3-round w3-image" alt="Menu" style="width:100%">
+    </div>
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Searing Steak</h1><br>
+      <p class="w3-large" >Steak has always held a special place in my heart.
+         As a child, a family dinner at a steakhouse was a rare treat,
+          reserved for those times when we excelled in our studies. 
+          The anticipation of that juicy, tender meat was almost as exciting as the reward itself.
+        As I grew older, I discovered the joy of cooking steak at home. 
+        Sharing the experience with my mother deepened our bond,
+         and the satisfaction of creating a delicious meal together was truly rewarding.
+        </p>
+        <h4 class="w3-padding-16">Eating Tips</h4>
+        <ol class="w3-text-grey w3-large" id="seventh-post-list">
+          <li class="seventh-post-list-content">Savor the Flavor: Take a moment to appreciate the rich, savory taste of the steak.
+             Pay attention to the texture, juiciness, and the subtle nuances of the meat.</li>
+          <li class="seventh-post-list-content">Share the Love: Enjoy your steak with someone you love. 
+            Whether it's a romantic dinner or a family gathering, 
+            sharing a meal can strengthen bonds and create lasting memories.</li>
+        </ol>
+    </div>  
+   </div>
+  <hr>
+
+  <!-- 第八篇貼文 -->
+  <div class="w3-container w3-padding-64" id="eighth-post">
+    <div class="w3-col l6 w3-padding-large">
+      <h1 class="w3-center">Energy Boost Latte</h1><br>
+      <p class="w3-large" >A steaming cup of latte is more than just a beverage;
+         it's a study companion, a productivity booster, and a source of comfort.
+          As a student, I've found that a well-crafted latte can be the perfect
+           pick-me-up to jumpstart my mornings and power through long study sessions.
+            The rich, creamy texture and subtle sweetness awaken my senses,
+             while the gentle caffeine boosts sharpness my focus and enhances my concentration.
+        </p>
+        <h4 class="w3-padding-16">Eating Tips</h4>
+        <ol class="w3-text-grey w3-large" id="eighth-post-list">
+          <li class="eighth-post-list-content">Sip Slowly, Savor the Moment:
+             Don't gulp down your latte. Instead, savor each sip,
+              allowing the flavors to dance on your palate.
+               This mindful approach can help you stay present and focused.</li>
+          <li class="eighth-post-list-content">The Power of Latte Art:
+             A beautifully crafted latte can elevate your mood and inspire creativity.
+              Take a moment to appreciate the artistry before enjoying your drink.</li>
+        </ol>
+    </div>  
+    <div class="w3-col l6 w3-padding-large">
+      <img src="img/latte.jpg" id="eight-post-img" class="w3-round w3-image" alt="Menu" style="width:100%">
+    </div>
+   </div>
+
+
+  <!-- Contact Section -->
+  <div class="w3-container w3-padding-64" id="contact">
+    <h1>Contact</h1><br>
+    <p>We offer full-service catering for any event, large or small. We understand your needs and we will cater the food to satisfy the biggerst criteria of them all, both look and taste. Do not hesitate to contact us.</p>
+    <p class="w3-text-blue-grey w3-large"><b>Catering Service, 42nd Living St, 43043 New York, NY</b></p>
+    <p>You can also contact us by phone 00553123-2323 or email catering@catering.com, or you can send us a message here:</p>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="number" placeholder="How many people" required name="People"></p>
+      <p><input class="w3-input w3-padding-16" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message \ Special requirements" required name="Message"></p>
+      <p><button class="w3-button w3-light-grey w3-section" type="submit">SEND MESSAGE</button></p>
+    </form>
+  </div>
+  
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-32">
+  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
+</footer>
+
+</body>
+</html>

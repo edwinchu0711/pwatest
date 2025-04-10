@@ -1,0 +1,113 @@
+/* others */
+html{
+    scroll-behavior:smooth; /*讓我網頁內的滑動平順(連結)*/
+    
+}
+
+
+
+
+
+/* Navbar *********************************************************************************************************/
+.menu-list{ /* menu的清單範圍 */
+    display:flex;
+    position:fixed;
+    flex-direction: column;
+    z-index: 2;
+    background-color: white;
+    margin-right: 20px;
+    margin-left: 20px;
+    /* 以下是拉下動畫 */
+    visibility: hidden;
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 0%);
+    transition: clip-path 0.5s ease, visibility 0.3s ease; 
+    letter-spacing: 1.8px; /* 增加字母之間的間距 */
+    
+    
+}
+#menu-list.show {  /* 當class裡多了show 就會收回 */
+    visibility: visible;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#menu-button-area{ /* menu按鈕+menu清單的範圍 */
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding : 0px ;
+    align-items: center;
+}
+
+
+
+
+
+
+/* 第一篇貼文 ************************************************************************************************************/
+#first-post-img{
+    opacity: 90%;
+}
+.first-post-list-content{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+#first-post-list{
+    list-style-type: upper-roman;
+}
+
+/* 第二篇貼文 *************************************************************************************************************/
+
+/* 第三篇貼文 *************************************************************************************************************/
+
+/* 第四篇貼文 *************************************************************************************************************/
+
+/* 第五篇貼文 *************************************************************************************************************/
+
+#fifth-post-img{ /*不太適合加透明度*/
+}
+
+.fifth-post-list-content{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+#fifth-post-list{
+    list-style-type: upper-roman;
+}
+
+/* 第六篇貼文 *************************************************************************************************************/
+
+#sixth-post-img{ /*不太適合加透明度*/
+}
+
+.sixth-post-list-content{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+
+#sixth-post-list{
+    list-style-type: upper-roman;
+}
+
+/* 第七篇貼文 *************************************************************************************************************/
+#seven-post-img{
+    opacity: 90%;
+}
+.seven-post-list-content{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+#seven-post-list{
+    list-style-type: upper-roman;
+}
+/* 第八篇貼文 *************************************************************************************************************/
+#eight-post-img{
+    opacity: 90%;
+}
+.eight-post-list-content{
+    margin-top: 0px;
+    margin-bottom: 12px;
+}
+#eight-post-list{
+    list-style-type: upper-roman;
+}
