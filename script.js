@@ -1,6 +1,7 @@
 var currentHeight = 0 ;
 var In_menulist = false ;
 var list_opening = false ;
+window.addEventListener('load', pageload);
 
 function pageload() {
     menuList();
