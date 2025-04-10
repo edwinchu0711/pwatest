@@ -2,12 +2,29 @@
 <html>
 <head>
 <title>Project</title>
+<!--------------------------------PWA------------------------------>
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#000000">
+<!-- iOS 支援 -->
+<link rel="apple-touch-icon" href="img/icon-192x192.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+
+
+
+
+
+<!--------------------------------PWA------------------------------>
+
+
+
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="w3.css"> <!-- 原本網頁用的CSS -->
 <link rel="stylesheet" type="text/css" href="style.css" /> <!-- 我們用的CSS -->
 <script src="script.js" type="text/javascript"></script> <!-- 我們用的javascript -->
-<script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=dF93y39m6rZCnljPf6s7_rpLSyt_vMioZQGuWDKBDBtt3DmZH7XfdjvH8WtJsEiAIru4TlETH5Gzy6_Uvz-uFR3UCexEmTKe6BYOGvItWxmtN1YvuE78o608PqWzmkSG" charset="UTF-8"></script><style>
+<style>
 body {font-family: "Times New Roman", Georgia, Serif;}
 h1, h2, h3, h4, h5, h6 {
   font-family: "Playfair Display";
@@ -274,6 +291,23 @@ h1, h2, h3, h4, h5, h6 {
 <footer class="w3-center w3-light-grey w3-padding-32">
   <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
-
+<script>
+  console.log('腳本開始執行');
+  if ('serviceWorker' in navigator) {
+    console.log('瀏覽器支援 ServiceWorker');
+    window.addEventListener('load', () => {
+      console.log('頁面已載入');
+      navigator.serviceWorker.register('./service-worker.js')
+        .then(registration => {
+          console.log('ServiceWorker 註冊成功:', registration.scope);
+        })
+        .catch(error => {
+          console.log('ServiceWorker 註冊失敗:', error);
+        });
+    });
+  } else {
+    console.log('此瀏覽器不支援 ServiceWorker');
+  }
+</script>
 </body>
 </html>
