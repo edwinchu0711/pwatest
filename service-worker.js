@@ -8,13 +8,22 @@ const urlsToCache = [
   // 其他需要快取的資源
 ];
 
-// 安裝 Service Worker
-self.addEventListener('install', event => {
+// 修改後的代碼：
+self.addEventListener('install', (event) => {
   event.waitUntil(
-    caches.open(CACHE_NAME)
-      .then(cache => {
-        return cache.addAll(urlsToCache);
-      })
+    caches.open('v1').then((cache) => {
+      return cache.addAll([
+        './',
+        './index.html',
+        './styles.css',
+        './scripts.js',
+        // 確保所有路徑都是正確的
+      ])
+      .catch(error => {
+        console.error('快取添加失敗:', error);
+        // 即使某些資源失敗，也可以繼續安裝 Service Worker
+      });
+    })
   );
 });
 
