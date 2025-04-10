@@ -1,8 +1,9 @@
 {
     "name": "BachiWeb",
-    "short_name": "BCW",
+    "short_name": "CWTisGAY",
     "description": "應用描述",
-    "start_url": "/index.html",
+    "start_url": "/pwatest",
+    "scope": "/pwatest/",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#000000",
